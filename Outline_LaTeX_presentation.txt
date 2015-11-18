@@ -3,15 +3,30 @@ Outline: Getting Started with LaTeX
 Uses (quick and flashy)
 beautiful typesetting
 review math, etc modules
-envirnments for report/book chapters, letters, figure labels, slides, etc.
+environments for report/book chapters, letters, figure labels, slides, posters, etc.
+templates for conferences etc.
+version control
+
+Examples of finished products
+
+Basic how-to
+article with basic info (author, title, sections, dummy text)
+command line compile
+
+Other compilation/editing options
+sublime plugin (also exist for other editors)
+TeXmaker and other GUIs
 
 Limitations
-not a editor!
+learning curve
+not a editor! (?)
+
+-- Break point for those that need to leave --
 
 Code Examples 
 arguments are named what you expect but take getting used to (large, Large, huge, etc.)
 Even more code! (examples of how much control you have)
-
+Hand out cheat sheet
 
 Customization w/ packages
 it’s easy: \usepackage{packagename}
@@ -19,6 +34,9 @@ geometry
 setspace
 fancyhdr
 fonts (need to be named)
+tabularx
+graphicx (?)
+caption
 
 Math features
 use modes: LaTeX has text, display math, and inline math (super/subscripts are squeezed) modes
@@ -27,10 +45,8 @@ most commands make sense (hell, maybe I should learn to math it up), will give a
 for symbols: detexify.kirelabs.org
 math guide: ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf
 
-Figure labels
+More examples
+figures with captions
+tables
+beamer slides
 
-Slides
-
-
-History of TeX 
-learn about this on your own or just as Eze. for a brain-dump (or drop it, what to you think, A.?)
