@@ -1,0 +1,191 @@
+\documentclass[xcolor={dvipsnames}]{beamer}
+
+%%% PACKAGES %%%
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+%\usepackage[usenames,dvipsnames]{color}
+\usepackage{textpos}
+\usepackage{tipa}
+\usepackage{hyperref}
+%\usepackage{pifont}
+
+
+%%% FONT %%%
+\renewcommand*{\familydefault}{phv}
+
+
+%%% BEAMER THEME %%%
+\usetheme{default}
+\usecolortheme{whale}
+\usecolortheme{orchid}
+\setbeamertemplate{navigation symbols}{} 
+\setbeamertemplate{footline}[frame number]
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(.99\textwidth,-.9cm)
+\fboxsep=1pt%padding thickness
+\fboxrule=1pt%border thickness
+\fcolorbox{black}{white}{\includegraphics[height=.75cm]{rc-logo}}
+\end{textblock*}}
+\setbeamertemplate{caption}{\insertcaption}
+\setbeamerfont{caption}{size=\scriptsize}
+\setbeamertemplate{itemize item}{triangle}
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{bibliography item}[triangle]
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
+
+%%% COLORS %%%
+\colorlet{Main}{black}
+
+\setbeamercolor{author in head/foot}{fg=Main}
+\setbeamercolor{title in head/foot}{fg=Main}
+\setbeamercolor{date in head/foot}{fg=Main}
+\setbeamercolor{page number in head/foot}{fg=Main}
+\setbeamercolor{normal text}{fg=darkgray}
+\setbeamercolor{structure}{fg=Main}
+\setbeamercolor{itemize item}{fg=Main}
+\setbeamercolor{itemize subitem}{fg=Main}
+\setbeamercolor{block title}{bg=structure,fg=white}
+
+
+%%% BIBLIOGRAPHY %%%
+\usepackage[%
+	backend=bibtex,
+	citestyle=authoryear,
+	maxcitenames=2,
+	maxbibnames=99,
+	firstinits=true,
+	url=false,
+	doi=false,
+	isbn=false, 
+	%sorting=none,
+	]{biblatex}
+%TODO \addbibresource{references.bib}
+% use \footcite{jones00} or \footfullcite{jones00} to make footnote citations
+
+
+
+%% TITLE PAGE INFO %%
+\author{Anjana Vakil and Veronica Hanus} 
+\institute{\includegraphics[height=4.5em]{rc-logo}\\Recurse Center}
+\title[Intro to \LaTeX]{Introduction to \LaTeX}
+\subtitle{A better way of typesetting documents} 
+\date[11/19/15]{November 19, 2015}
+
+%% DOCUMENT %%
+\begin{document}
+{
+\setbeamertemplate{footline}{} 
+\begin{frame}
+  \titlepage
+\end{frame}
+}
+\addtocounter{framenumber}{-1}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents%[pausesections]
+\end{frame}
+
+
+\section{What is \LaTeX?}
+
+
+\section{Why use it?}
+\begin{frame}{Use cases}
+%Uses (quick and flashy)
+%beautiful typesetting
+%review math, etc modules
+%environments for report/book chapters, letters, figure labels, slides, posters, etc.
+%templates for conferences etc.
+%version control
+\end{frame}
+
+\section{Examples}
+\begin{frame}{Examples}
+%Examples of finished products
+\end{frame}
+
+\section{\LaTeX basics}
+\begin{frame}{A basic document}
+%Basic how-to
+%article with basic info (author, title, sections, dummy text)
+\end{frame}
+
+\begin{frame}{Editing and compiling}
+%command line compile
+%
+%Other compilation/editing options
+%sublime plugin (also exist for other editors)
+%TeXmaker and other GUIs
+\end{frame}
+
+\section{Limitations}
+\begin{frame}{Limitations}
+%Limitations
+%learning curve
+%not a editor! (?)
+\end{frame}
+
+\section{--Break--}
+\begin{frame}{Break point!}
+\begin{block}{}
+\begin{center}
+If you need to leave, now's a good time!
+
+More details after the break.
+\end{center}
+\end{block}
+\end{frame}
+
+\section{Basic code examples}
+\begin{frame}{Code Examples}
+%arguments are named what you expect but take getting used to (large, Large, huge, etc.)
+%Even more code! (examples of how much control you have)
+%Hand out cheat sheet
+\end{frame}
+
+
+\section{Using packages}
+\begin{frame}{Using packages}
+%Customization w/ packages
+%it’s easy: \usepackage{packagename}
+%geometry
+%setspace
+%fancyhdr
+%fonts (need to be named)
+%tabularx
+%graphicx (?)
+%caption
+\end{frame}
+
+\section{Math in \LaTeX}
+\begin{frame}{Math in \LaTeX}
+%Math features
+%use modes: LaTeX has text, display math, and inline math (super/subscripts are squeezed) modes
+%what packages are best?
+%most commands make sense (hell, maybe I should learn to math it up), will give a few examples
+%for symbols: detexify.kirelabs.org
+%math guide: ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf
+\end{frame}
+
+\section{Other useful features}
+\begin{frame}{Figures and captions}
+
+\end{frame}
+
+\begin{frame}{Tables}
+
+\end{frame}
+
+\begin{frame}{Slides with \texttt{beamer}}
+
+\end{frame}
+
+
+
+
+
+\end{document}
