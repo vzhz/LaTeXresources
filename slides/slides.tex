@@ -7,9 +7,9 @@
 \usepackage{multirow}
 %\usepackage[usenames,dvipsnames]{color}
 \usepackage{textpos}
-\usepackage{tipa}
 \usepackage{hyperref}
-%\usepackage{pifont}
+
+
 
 
 %%% FONT %%%
@@ -28,8 +28,8 @@
 \fboxrule=1pt%border thickness
 \fcolorbox{black}{white}{\includegraphics[height=.75cm]{rc-logo}}
 \end{textblock*}}
-\setbeamertemplate{caption}{\insertcaption}
-\setbeamerfont{caption}{size=\scriptsize}
+\setbeamertemplate{caption}[numbered]
+%\setbeamerfont{caption}{size=\scriptsize}
 \setbeamertemplate{itemize item}[triangle]
 \setbeamertemplate{itemize subitem}[circle]
 \setbeamertemplate{bibliography item}[triangle]
@@ -187,17 +187,63 @@ In preamble: \texttt{\textbackslash usepackage\{packagename\}}
 \section{Other useful features}
 \begin{frame}{Figures and captions}
 
+\begin{figure}
+\includegraphics[scale=1.5]{rc-logo}
+\caption{The RC logo}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Tables}
 
+\begin{table}
+	\caption{Recursers}
+	\begin{tabular}{llr}
+		\toprule
+		Name 					& Pseudonym 				& Batch	\\
+		\midrule
+		Veronica Hanus 	& Flight Witch 				& Fall 2	\\
+		Anjana Vakil 		& Spandex Governor 	& Fall 2	\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{block}{Useful packages:}
+\begin{itemize}
+\item Controlling table widths: \texttt{tabularx}
+\item Multi-row cells: \texttt{multirow}
+\item Better formatting: \texttt{booktabs} 
+\end{itemize}
+\end{block}
+
 \end{frame}
 
 \begin{frame}{Slides with \texttt{beamer}}
+\structure{Meta-example:} You're looking at it! Whoaaa!
 
+\vfill
+
+The \texttt{beamer} class can be used for posters as well.
+
+\vfill
+
+Pitfalls:
+\begin{itemize}
+\item Standard themes are uuuugly
+\item Setting up a template you like can be a headache
+\item Many academics who use \LaTeX~ for articles still use PowerPoint etc. for slides/posters
+\end{itemize}
 \end{frame}
 
+\begin{frame}{Bibliographies}
+\begin{block}{\texttt{.bib} files}
+List all your sources in bibtex format.
 
+Many citation systems (e.g. Google scholar, Mendeley) offer an ``export to bibtex'' option.
+\end{block}
+\begin{block}{\texttt{biblatex} Package}
+Allows you to fully customize citation and bibliography styles.
+\end{block}
+\end{frame}
 
 
 
