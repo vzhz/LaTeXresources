@@ -1,0 +1,51 @@
+%%% --- Preamble ----
+
+% First declare a document class
+\documentclass{article}
+
+% Load packages 
+\usepackage[colorlinks]{hyperref}
+\usepackage[style=numeric,backend=bibtex]{biblatex}
+
+% Add the bibliography file
+\addbibresource{example-bibliography.bib}
+
+% Include some article metadata
+\author{Anjana Vakil}
+\title{A minimal \LaTeX~ article}
+% Today's date is automatically added; to add a specific date, use:
+% \date{November 20, 2015}
+
+%%% --- end Preamble ---
+%%% --- begin Document content ---
+
+\begin{document}
+
+% Display author/title/date
+\maketitle
+
+Hello World! This is a little \LaTeX~ document.
+
+% Sections help you organize your document
+% They're automatically numbered
+% Correspond to PDF bookmarks
+\section{An interesting topic}
+% You can add labels to things to enable linking to them with \ref
+\label{interesting} 
+
+This is where I would have some text. Oh how beautiful this text is. This is where I would have some text. Oh how beautiful this text is. This is where I would have some text. Oh how beautiful this text is. This is where I would have some text. Oh how beautiful this text is. This is where I would have some text. Oh how beautiful this text is. 
+
+I could start another paragraph and it could contain a citation \parencite{Vakil15}. Then the rest of the paragraph would continue. Then the rest of the paragraph would continue. Then the rest of the paragraph would continue. Then the rest of the paragraph would continue. 
+
+\section{Another topic}
+\label{another}
+
+I could reference the previous section like this (see section \ref{interesting}). Then the rest of the paragraph would continue. Then the rest of the paragraph would continue. Then the rest of the paragraph would continue. Then the rest of the paragraph would continue. 
+
+% Generate the bibliography by printing the full references for the works you cited above
+% (Automatically adds "References" header)
+\printbibliography
+
+\end{document}
+
+%%% --- end Document content ---
