@@ -46,13 +46,8 @@ caption
 Math features
 text vs math: 
 use modes: LaTeX has text (inline, as is), display math (equations separate from main body), and inline math (super/subscripts are squeezed) modes
-packages:
-amsmath
-mathtools
 
 most commands make sense (hell, maybe I should learn to math it up), will give a few examples
-for symbols: detexify.kirelabs.org
-math guide: ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf
 ^Veronica does
 once in math mode, spaces and line breaks don’t have significance on their own - considered part of equations need to re-enter text mode with dedicated commands
 
