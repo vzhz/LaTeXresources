@@ -159,15 +159,19 @@ More details after the break.
 
 \section{Using packages}
 \begin{frame}{Using packages}
-%Customization w/ packages
-%it’s easy: \usepackage{packagename}
-%geometry
-%setspace
-%fancyhdr
-%fonts (need to be named)
-%tabularx
-%graphicx (?)
-%caption
+\begin{block}{}
+\centering
+In preamble: \texttt{\textbackslash usepackage\{packagename\}}
+\end{block}
+\begin{itemize}
+\item Page layout: \texttt{\textbackslash usepackage[margin=1.5in]\{geometry\}}
+\item Include image files: \texttt{graphicx}
+\item Web links: \texttt{hyperref} 
+\item Displaying code: \texttt{verbatim} or \texttt{listings}
+\item Controlling line spacing more easily: \texttt{setspace}
+\item Customize headers/footers: \texttt{fancyhdr}
+\item Customizing figure/table captions: \texttt{caption}
+\end{itemize}
 \end{frame}
 
 \section{Math in \LaTeX}
