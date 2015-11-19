@@ -2,10 +2,11 @@ Outline: Getting Started with LaTeX
 
 Uses (quick and flashy)
 beautiful typesetting
-review math, etc modules
+review math, etc modules <-- V
 environments for report/book chapters, letters, figure labels, slides, posters, etc.
 templates for conferences etc.
 version control
+^Veronica does
 
 Examples of finished products
 
@@ -16,6 +17,7 @@ command line compile
 Other compilation/editing options
 sublime plugin (also exist for other editors)
 TeXmaker and other GUIs
+^V subl, A texmaker
 
 Limitations
 learning curve
@@ -37,6 +39,9 @@ fonts (need to be named)
 tabularx
 graphicx (?)
 caption
+^A. does
+
+^^^A. find cheat sheet puts on github^^^
 
 Math features
 use modes: LaTeX has text, display math, and inline math (super/subscripts are squeezed) modes
@@ -44,9 +49,10 @@ what packages are best?
 most commands make sense (hell, maybe I should learn to math it up), will give a few examples
 for symbols: detexify.kirelabs.org
 math guide: ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf
+^Veronica does
 
 More examples
 figures with captions
 tables
 beamer slides
-
+^A. does
