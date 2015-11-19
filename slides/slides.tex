@@ -7,9 +7,9 @@
 \usepackage{multirow}
 %\usepackage[usenames,dvipsnames]{color}
 \usepackage{textpos}
-\usepackage{tipa}
 \usepackage{hyperref}
-%\usepackage{pifont}
+
+
 
 
 %%% FONT %%%
@@ -28,9 +28,9 @@
 \fboxrule=1pt%border thickness
 \fcolorbox{black}{white}{\includegraphics[height=.75cm]{rc-logo}}
 \end{textblock*}}
-\setbeamertemplate{caption}{\insertcaption}
-\setbeamerfont{caption}{size=\scriptsize}
-\setbeamertemplate{itemize item}{triangle}
+\setbeamertemplate{caption}[numbered]
+%\setbeamerfont{caption}{size=\scriptsize}
+\setbeamertemplate{itemize item}[triangle]
 \setbeamertemplate{itemize subitem}[circle]
 \setbeamertemplate{bibliography item}[triangle]
 \setbeamertemplate{blocks}[rounded][shadow=true]
@@ -91,7 +91,15 @@
 
 
 \section{What is \LaTeX?}
-
+\begin{frame}{What is \LaTeX?}
+\begin{itemize}
+\item A system/markup language for typesetting documents
+\item Originally geared towards scientific/technical documents
+\item Free software
+\item Very customizable
+\item Part of the greater \TeX~ family (\TeX, XeLaTeX, LuaLaTeX...)
+\end{itemize}
+\end{frame}
 
 \section{Why use it?}
 \begin{frame}{Use cases}
@@ -120,6 +128,7 @@
 %Other compilation/editing options
 %sublime plugin (also exist for other editors)
 %TeXmaker and other GUIs
+Online collaborative editor: https://www.sharelatex.com/
 \end{frame}
 
 \section{Limitations}
@@ -150,15 +159,19 @@ More details after the break.
 
 \section{Using packages}
 \begin{frame}{Using packages}
-%Customization w/ packages
-%it’s easy: \usepackage{packagename}
-%geometry
-%setspace
-%fancyhdr
-%fonts (need to be named)
-%tabularx
-%graphicx (?)
-%caption
+\begin{block}{}
+\centering
+In preamble: \texttt{\textbackslash usepackage\{packagename\}}
+\end{block}
+\begin{itemize}
+\item Page layout: \texttt{\textbackslash usepackage[margin=1.5in]\{geometry\}}
+\item Include image files: \texttt{graphicx}
+\item Web links: \texttt{hyperref} 
+\item Displaying code: \texttt{verbatim} or \texttt{listings}
+\item Controlling line spacing more easily: \texttt{setspace}
+\item Customize headers/footers: \texttt{fancyhdr}
+\item Customizing figure/table captions: \texttt{caption}
+\end{itemize}
 \end{frame}
 
 \section{Math in \LaTeX}
@@ -174,17 +187,63 @@ More details after the break.
 \section{Other useful features}
 \begin{frame}{Figures and captions}
 
+\begin{figure}
+\includegraphics[scale=1.5]{rc-logo}
+\caption{The RC logo}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Tables}
 
+\begin{table}
+	\caption{Recursers}
+	\begin{tabular}{llr}
+		\toprule
+		Name 					& Pseudonym 				& Batch	\\
+		\midrule
+		Veronica Hanus 	& Flight Witch 				& Fall 2	\\
+		Anjana Vakil 		& Spandex Governor 	& Fall 2	\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{block}{Useful packages:}
+\begin{itemize}
+\item Controlling table widths: \texttt{tabularx}
+\item Multi-row cells: \texttt{multirow}
+\item Better formatting: \texttt{booktabs} 
+\end{itemize}
+\end{block}
+
 \end{frame}
 
 \begin{frame}{Slides with \texttt{beamer}}
+\structure{Meta-example:} You're looking at it! Whoaaa!
 
+\vfill
+
+The \texttt{beamer} class can be used for posters as well.
+
+\vfill
+
+Pitfalls:
+\begin{itemize}
+\item Standard themes are uuuugly
+\item Setting up a template you like can be a headache
+\item Many academics who use \LaTeX~ for articles still use PowerPoint etc. for slides/posters
+\end{itemize}
 \end{frame}
 
+\begin{frame}{Bibliographies}
+\begin{block}{\texttt{.bib} files}
+List all your sources in bibtex format.
 
+Many citation systems (e.g. Google scholar, Mendeley) offer an ``export to bibtex'' option.
+\end{block}
+\begin{block}{\texttt{biblatex} Package}
+Allows you to fully customize citation and bibliography styles.
+\end{block}
+\end{frame}
 
 
 
