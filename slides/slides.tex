@@ -103,15 +103,14 @@
 
 \section{Why use it?}
 \begin{frame}{Use cases}
-%Uses (quick and flashy)
-%beautiful typesetting
-%review math, etc modules
-%environments for report/book chapters, letters, figure labels, slides, posters, etc.
-%templates for conferences etc.
-%version control
+\begin{itemize}
+\item Scholarly articles (vastly superior to Word etc.)
+\item Theses, dissertations
+\item Slides \& posters
+\item $\dots$and more!
+\end{itemize}
 \end{frame}
 
-\section{Pros and cons}
 \begin{frame}{Pros and cons}
 Pros
 \begin{itemize}
@@ -131,24 +130,30 @@ Cons:
 \end{itemize}
 \end{frame}
 
-\section{Examples}
-\begin{frame}{Examples}
-%Examples of finished products
-\end{frame}
 
-\section{\LaTeX basics}
-\begin{frame}{A basic document}
-%Basic how-to
-%article with basic info (author, title, sections, dummy text)
+\section{\LaTeX~ basics}
+\begin{frame}{\LaTeX~ basics}
+\begin{block}{}
+To see how a basic article works, take a look at \texttt{example/simple-example.tex}!
+\end{block}
 \end{frame}
 
 \begin{frame}{Editing and compiling}
-%command line compile
-%
-%Other compilation/editing options
-%sublime plugin (also exist for other editors)
-%TeXmaker and other GUIs
-Online collaborative editor: https://www.sharelatex.com/
+
+Simplest option:
+\begin{enumerate}
+\item Create and edit a \texttt{.tex} file in your favorite editor
+\item At the command line run \texttt{pdflatex filename.tex}
+\item View the beautiful \texttt{.pdf} file it generated and rejoice!
+\end{enumerate}
+\vfill
+Other compilation/editing options:
+\begin{itemize}
+\item Sublime Text plugin (plugins also exist for other editors)
+\item TeXmaker (cross-platform): \url{http://www.xm1math.net/texmaker/}
+\item Other GUIs for Windows, Mac, Linux
+\item Online collaborative editor: https://www.sharelatex.com/
+\end{itemize}
 \end{frame}
 
 \section{Resources}
@@ -178,11 +183,11 @@ More details after the break.
 \end{block}
 \end{frame}
 
-\section{Basic code examples}
-\begin{frame}{Code Examples}
-%arguments are named what you expect but take getting used to (large, Large, huge, etc.)
-%Even more code! (examples of how much control you have)
-%Hand out cheat sheet
+\section{Helpful commands}
+\begin{frame}{Helpful commands}
+\begin{block}{}
+Take a look at \texttt{cheatsheet/cheatsheet.pdf}!
+\end{block}
 \end{frame}
 
 
@@ -206,16 +211,10 @@ In preamble: \texttt{\textbackslash usepackage\{packagename\}}
 
 \section{Math in \LaTeX}
 \begin{frame}{Math in \LaTeX}
-%Math features
-%use modes: LaTeX has text, display math, and inline math (super/subscripts are squeezed) modes
-%what packages are best?
-%most commands make sense (hell, maybe I should learn to math it up), will give a few examples
-
-
 \begin{block}{Useful packages:}
 \begin{itemize}
 \item Advanced math \texttt{amsmath}, fixes \texttt{mathtools}
-\item Options adjusts all of single symbol (eg. \texttt{\usepackage[<option>]{amsmath}})
+\item Options adjust all of single symbol (\texttt{\usepackage[<opt.>]{amsmath}})
 \item Envirnment packages control layout of the whole document
 \item GUI outputs code \url{https://www.codecogs.com/latex/eqneditor.php}
 \end{itemize}
@@ -229,7 +228,7 @@ Resources:
 \item Draw your symbol, find package needed \url{https://detexify.kirelabs.org}
 \item GUI which outputs code \url{https://www.codecogs.com/latex/eqneditor.php}
 \item Searchable community forum \url{https://www.codecogs.com/latex/eqneditor.php}
-\item Intense math guide (.pdf) \url{ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf}
+%\item Intense math guide (.pdf) \url{ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf}
 \end{itemize}
 
 \end{frame}
